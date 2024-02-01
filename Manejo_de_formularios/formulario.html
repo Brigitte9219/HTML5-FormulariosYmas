@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de formularios</title>
+</head>
+<body>
+    <h1>Manejo de formularios</h1>
+
+    <fieldset>
+        <legend>Formulario</legend>
+
+        <form action="guardar.html" method="POST" autocomplete="off"><br>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="" id="nombre">
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="" id="apellido">
+            
+            <br><br>
+
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="" id="usuario">
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" name="contraseña" id="contraseña">
+
+            <br><br>
+
+            <label for="">Elija su lenguaje favorito:</label><br>
+            <input type="radio" name="lenguaje" id="HTML"><label for="HTML">HTML</label>
+            <input type="radio" name="lenguaje" id="JAVA"><label for="JAVA">JAVA</label>
+            <input type="radio" name="lenguaje" id="CSS"><label for="CSS">CSS</label>
+
+            <br><br>
+
+            <label for="">Elija su medio de transporte</label><br>
+            <input type="checkbox" name="Auto" id="Auto" value="Auto"><label for="Auto">Auto</label>
+            <input type="checkbox" name="Moto" id="Moto" value="Moto"><label for="Moto">Moto</label>
+            <input type="checkbox" name="Barco" id="Barco" value="Barco"><label for="Barco">Barco</label>
+
+            <br><br>
+
+            <label for="fav">Elija su lenguaje favorito:</label>
+            <select name="fav" id="fav">
+                <option value="HTML">HTML</option>
+                <option value="JAVA">JAVA</option>
+                <option value="CSS">CSS</option>
+            </select>
+
+            <br><br>
+
+            <label for="parrafo">Ingrese su texto:</label><br>
+            <textarea name="parrafo" id="parrafo" cols="30" rows="10"></textarea>
+
+            <br><br>
+
+            Listado de navegadores: <input name="navegadores" list="navegadores">
+            <datalist id="navegadores">
+                <option value="Google">
+                <option value="Mozilla">
+                <option value="Brave">
+            </datalist>
+
+            <br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar formulario">
+
+        </form>
+    </fieldset>
+</body>
+</html>

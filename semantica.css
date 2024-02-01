@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-color: yellowgreen;
+}
+nav{
+    background-color: aqua;
+}
+section{
+    float: left;
+    background-color: bisque;
+    width: 60%;
+    min-height: 200px;
+}
+section article{
+    background-color: teal;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+aside{
+    float: left;
+    background-color: cornflowerblue;
+    width: 40%;
+    min-height: 200px;
+}
+.clearfix{
+    clear: both;
+}
+footer{
+    background-color: violet;
+}

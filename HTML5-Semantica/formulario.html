@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario HTML5</title>
+</head>
+<body>
+    <form action="" method="post">
+        Página web:<input type="url" name="web" id="" autofocus placeholder="Página web aquí"><br><!--Autofocus: para que se resalte en la página-->
+        Móvil: <input type="text" name="movil" id="" pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{4}$" title="Debe ser asi. Ejm: 123 456 0789"><br><!--Pattern:la forma en como quiere el formato-->
+        Correo:<input type="email" name="correo" id="" required><br>
+        Fecha: <input type="date" name="fecha" id="" ><br>
+        Mes:<input type="month" name="mes" id=""><br>
+        semana: <input type="week" name="semana" id=""><br>
+        Hora: <input type="time" name="hora" id=""><br>
+        Fecha y hora: <input type="datetime-local" name="fecha-hora" id=""><br>
+        Edad: <input type="number" name="edad" id="" min="18" max="50" step="5"><br>
+        Puntos: <input type="range" name="puntos" id="" min="10" max="20"><br>
+        Color favorito: <input type="color" name="color_fav" id=""><br>
+
+        Listado de colores: <input list="colores" name="colores">
+        <datalist id="colores">
+            <option value="Amarillo">
+            <option value="Azul">
+            <option value="Rojo">
+            <option value="Verde">
+            <option value="Naranja">
+        </datalist><br>
+        <input type="image" src="https://static.vecteezy.com/system/resources/previews/006/086/235/original/send-button-interface-icon-vector.jpg" alt="" width="100">
+
+        Limpiar campos del formulario: <input type="reset" value="Limpiar campos"><br>
+        Boton: <input type="submit" value="Enviar datos">
+    </form>
+</body>
+</html>
